@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-project"
+version = "0.1.0"
+description = "A from-scratch LLM learning project"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.0",
+    "torch>=2.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
